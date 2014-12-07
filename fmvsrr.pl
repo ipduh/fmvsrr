@@ -42,6 +42,17 @@ if($n < 2){
   exit 0;
 }
 
+print <<EOHD;
+N    = Number of routers
+Πfm  = Maintenance Cost in a Fully Connected Mesh
+Πrr  = Maintenance Cost in a Two Route Reflectors Setup
+Kfm  = Total Configuration Cost in a Fully Connected Mesh
+Krr  = Total Configuration Cost in a Two Route Reflectors Setup
+Nfm  = Cost of adding one router in a Fully Connected Mesh
+Nrr  = Cost of adding one router in a Two Route Reflectors Setup
+EOHD
+
+print "\n\n";
 print "N=2\tΠfm=2\t\tΠrr=2+\t\tKfm=2\t\tKrr=2+\t\tNfm=2\t\tNrr=2+\n" if($n > 1);
 print "N=3\tΠfm=3\t\tΠrr=3+\t\tKfm=6\t\tKrr=3+\t\tNfm=6\t\tNrr=3\n" if($n > 2);
 
