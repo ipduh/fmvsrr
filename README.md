@@ -14,8 +14,8 @@ intraAS setup for AWMN nodes with many routers.
 
 
 Athens Wireless Metropolitan Network (AWMN) is mostly a wireless BGP internet where each
-wireless node has an Autonomous System Number and 1 to 15 routers with wireless interfaces.
-The routing within each node is done with static Routes or some iGP, usually OSPF
+wireless node is an Autonomous System (AS), assigned a 32b Number and each AS has 1 to 15 routers
+with wireless interfaces. The routing within each node/AS is done with static Routes or some iGP, usually OSPF
 or iBGP with next-hop-self.
 
 
