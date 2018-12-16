@@ -24,9 +24,11 @@ We assume that:
 The maintenance cost is equal to the number of iBGP sessions or
 the number of connections in the mesh.
 
-The total configuration cost is equal to the number of (neighbor) configuration stanzas for all iBGP connections.
+The total configuration cost is equal to the number of (neighbor) configuration
+stanzas for all iBGP connections.
 
-The cost of adding a router is equal to the number of (neighbor) iBGP configuration stanzas needed in all the nodes in the mesh.
+The cost of adding a router is equal to the number of (neighbor) iBGP
+configuration stanzas needed in all the nodes in the mesh.
 ```
 
 
@@ -76,4 +78,3 @@ N=27	Πfm=378	Πrr=29	Kfm=702	Krr=55	Nfm=52	Nrr=3
 
 <br />
 
-more at http://alog.ipduh.com/2014/12/bgp-as-igp-with-next-hop-self-rr-vs.html
