@@ -36,6 +36,7 @@ configuration stanzas needed in all the nodes in the mesh.
 
 
 ```
+$ ./fmvsrr.pl 27
 N    = Number of routers
 Πfm  = Maintenance Cost in a Fully Connected Mesh
 Πrr  = Maintenance Cost in a Two Route Reflectors Setup
