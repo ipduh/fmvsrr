@@ -27,7 +27,6 @@ The cost of adding a router is equal to the number of (neighbor) iBGP configurat
 
 
 ```
-@console
 ./fmvsrr.pl 27
 N    = Number of routers
 Πfm  = Maintenance Cost in a Fully Connected Mesh
