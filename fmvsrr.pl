@@ -9,8 +9,6 @@ BGP as iGP with next-hop-self in a fully connected mesh
 vs
 BGP as iGP with next-hop-self with 2 Route Reflectors.
 
-L< http://sl.ipduh.com/fmvsrr >
-
 =cut
 
 =head1 Author
@@ -42,6 +40,12 @@ if($n < 2){
   exit 0;
 }
 
+
+sub del
+{
+  print "\t";
+}
+
 print <<EOHD;
 N    = Number of routers
 Πfm  = Maintenance Cost in a Fully Connected Mesh
@@ -53,12 +57,26 @@ Nrr  = Cost of adding one router in a Two Route Reflectors Setup
 EOHD
 
 print "\n\n";
-print "N=2\tΠfm=2\t\tΠrr=2+\t\tKfm=2\t\tKrr=2+\t\tNfm=2\t\tNrr=2+\n" if($n > 1);
-print "N=3\tΠfm=3\t\tΠrr=3+\t\tKfm=6\t\tKrr=3+\t\tNfm=6\t\tNrr=3\n" if($n > 2);
+print "N=2\tΠfm=2\tΠrr=2+\tKfm=2\tKrr=2+\tNfm=2\tNrr=2+\n" if($n > 1);
+print "N=3\tΠfm=3\tΠrr=3+\tKfm=6\tKrr=3+\tNfm=6\tNrr=3\n" if($n > 2);
 
 if($n > 3){
   for(my $i=4; $i<=$n; $i++){
-    print "Ν=$i \tΠfm=", ($i*$i-$i)/2 , "\t\tΠrr=", $i+2 , "\t\tKfm=",$i*($i-1),"\t\tKrr=",2*$i+1,"\t\tNfm=",2*($i-1),"\t\tNrr=3\n";
+
+  print "N=$i";
+  del();
+  print "Πfm=", ($i*$i+$i)/2;
+  del();
+  print "Πrr=", $i+2;
+  del();
+  print "Kfm=", $i*($i-1);
+  del();
+  print "Krr=", 2*$i+1;
+  del();
+  print "Nfm=", 2*($i-1);
+  del();
+  print "Nrr=3\n";
+
   }
 }
 
