@@ -65,7 +65,7 @@ if($n > 3){
 
   print "N=$i";
   del();
-  print "Πfm=", ($i*$i+$i)/2;
+  print "Πfm=", ($i*$i-$i)/2;
   del();
   print "Πrr=", $i+2;
   del();
