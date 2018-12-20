@@ -19,7 +19,7 @@ wireless node is an Autonomous System (AS), assigned a 32b Number and each AS ha
 with wireless interfaces. The routing within each node/AS is done with static Routes or some iGP,
 usually OSPF, or iBGP with next-hop-self.
 
-No matter what this script says it is still easier in the AWMN to no set up
+No matter what this script says it is still safer and easier in the AWMN to no set up
 BGP route reflectors.
 
 
